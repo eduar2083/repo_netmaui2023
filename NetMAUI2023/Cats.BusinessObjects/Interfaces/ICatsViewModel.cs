@@ -2,5 +2,6 @@
 
 public interface ICatsViewModel
 {
-    ValueTask<ReadOnlyCollection<Cat>> GetCats();
+    IReadOnlyCollection<Cat> Cats { get; }
+    Task GetCatsAsync();
 }
